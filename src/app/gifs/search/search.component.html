@@ -1,2 +1,10 @@
 <h5>Search:</h5>
-<input type="text" class="form-control" placeholder="Search gifs..." />
+<input
+  type="text"
+  class="form-control"
+  placeholder="Search gifs..."
+  (keyup.enter)="search()"
+  #txtSearch
+/>
+
+<!-- #txtSearch es una referencia local -->
