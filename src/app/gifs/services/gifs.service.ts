@@ -15,7 +15,17 @@ export class GifsService {
     return [...this._browsingHistory];
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this._browsingHistory =
+      JSON.parse(localStorage.getItem('browsingHistory')!) || [];
+
+    //Otra forma de hacerlo:
+    // if (localStorage.getItem('browsingHistory')) {
+    //   this._browsingHistory = JSON.parse(
+    //     localStorage.getItem('browsingHistory')!
+    //   );
+    // }
+  }
 
   searchGifs(query: string) {
     query = query.trim().toLowerCase();
@@ -23,6 +33,10 @@ export class GifsService {
       //validamos si el valor ya está introducido.
       this._browsingHistory.unshift(query); //Si no lo está, lo añado al array
       this._browsingHistory = this._browsingHistory.splice(0, 10); //Y hago el corte hasta 10
+      localStorage.setItem(
+        'browsingHistory',
+        JSON.stringify(this._browsingHistory)
+      );
     }
 
     this.http
