@@ -4,6 +4,7 @@
   <div class="list-group list-reset">
     <a
       *ngFor="let item of browsingHistory"
+      (click)="searchImages(item)"
       href="#"
       class="list-group-item list-group-item-action"
       >{{ item | titlecase }}</a
