@@ -1,27 +1,23 @@
-# GifsApp
+# Gifs App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+<img alt="Gif dinosaurio" src="https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif" height=150px/>
 
-## Development server
+## Objetivo: 
+Aplicación web para la búsqueda de gifs. Este proyecto forma parte del curso de Angular de Fernando Herrera impartido en Udemy. El ejercicio consiste en desarrollar una aplicación web de búsqueda de gifs con Angular. La aplicación busca en el API de [Giphy Developers](https://developers.giphy.com/) los 10 primeros resultados que coincidan con la búsqueda del usuario. Además, vamos a almacenar nuestros historial, limitado a 10 búsquedas, en el localStorage.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tecnologías utilizadas:
 
-## Code scaffolding
+- HTML5
+- CSS3
+- Bootstrap
+- Angular
+- TypeScript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación: 
 
-## Build
+Para poder usar este proyecto tienes que seguir estos pasos:
+- Clonar el repositorio
+- Instalar Angular con ``npm install -g @angular/cli``
+- Instalar TypeScript con ``npm install -g typescript``
+- Arrancar el proyecto con ``ng serve -o``
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
